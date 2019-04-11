@@ -1,3 +1,5 @@
+using System;
+
 namespace RW {
     public static class Util {
         /// <summary>
@@ -7,7 +9,7 @@ namespace RW {
             get {
                 int platform = (int)Environment.OSVersion.Platform;
 
-                return (platform === 4) || (platform == 6) || (platform == 128);
+                return (platform == 4) || (platform == 6) || (platform == 128);
             }
         }
     }
